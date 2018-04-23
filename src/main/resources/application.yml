@@ -1,0 +1,21 @@
+server:
+  port: 8081
+  address: 0.0.0.0
+spring:
+  application:
+    name: mqtt-core
+  http:
+      multipart:
+        max-file-size: 10MB
+        max-request-size: 500MB
+  redis:
+    host: 172.16.6.87
+    port: 6379
+    database: 9
+    timeout: 5000
+    password: 123456
+    pool:
+      max-active: 20
+      max-wait: 10000
+      max-idle: 8
+      min-idle: 1
